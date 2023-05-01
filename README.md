@@ -67,7 +67,7 @@ sudo service nginx reload
 sudo service php8.1-fpm restart
 sudo mkdir /home/server-aws/.ssh
 sudo mv /home/ubuntu/.ssh/id* /home/server-aws/.ssh
-sudo chown server-aws:server-aws /home/server-aws/.ssh
+sudo chown -R server-aws:server-aws /home/server-aws/.ssh
 su server-aws
 cd /home/server-aws/www
 git pull origin main
